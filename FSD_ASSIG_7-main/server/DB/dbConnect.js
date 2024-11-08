@@ -1,19 +1,8 @@
-//external imports
+
 const mongoose = require("mongoose");
-require('dotenv').config({ path: './.env' });
+require('dotenv').config({ path: 'E:\react\-FSD_ASSIG_7\FSD_ASSIG_7-main\.env' });
 
 async function dbConnect(){
-    //use mongoose to connect this app
-    //to our database on mongoDB using the DB_URL(connection string)
-    // mongoose.connect(
-    //     process.env.DB_URL,
-    //     {
-    //         //these are options to ensure that the connection
-    //         //is done properly
-    //         useNewUrlParser:true,
-    //         useUnifiedTopology:true,
-    //     }
-    // )
 
     mongoose.connect(process.env.DB_URL,
         { useNewUrlParser: true, 
